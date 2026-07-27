@@ -1,0 +1,89 @@
+{
+  "projects": [
+    {
+      "id": "siebel-store",
+      "title": "Siebel Store",
+      "category": "E-commerce",
+      "url": "https://www.siebel.store/",
+      "github": "https://github.com/bilalyasir/siebel-store",
+      "description": "An elegant skincare eCommerce platform with responsive design, shopping experience, product catalog, optimized UI, and modern frontend architecture.",
+      "longDescription": "Siebel Store is a premium skincare eCommerce destination featuring a curated product catalog, smooth shopping experience, and a modern frontend architecture optimized for performance and conversions.",
+      "tech": ["Flask", "HTML", "CSS", "JavaScript"],
+      "features": ["Responsive Design", "Product Catalog", "Shopping Cart", "Optimized UI", "Modern Frontend"],
+      "stats": { "products": 40, "pageSpeed": 95, "visitors": "2k+" },
+      "featured": true,
+      "image": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "amks",
+      "title": "AMKS",
+      "category": "E-commerce",
+      "url": "https://amks.pk/",
+      "github": "https://github.com/bilalyasir/amks",
+      "description": "A textile and fabric eCommerce platform featuring premium UI, product management, responsive layouts, and modern shopping experience.",
+      "longDescription": "AMKS is a textile and fabric commerce platform with premium UI, comprehensive product management, responsive layouts, and a modern shopping experience tailored for the textile industry.",
+      "tech": ["React", "TypeScript", "Tailwind", "Vite"],
+      "features": ["Premium UI", "Product Management", "Responsive Layouts", "Modern Shopping Experience"],
+      "stats": { "products": 120, "pageSpeed": 92, "visitors": "5k+" },
+      "featured": true,
+      "image": "https://images.pexels.com/photos/5995548/pexels-photo-5995548.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "smash-daddy",
+      "title": "Smash Daddy",
+      "category": "Restaurant",
+      "url": "https://smashdaddyupdated.vercel.app/",
+      "github": "https://github.com/bilalyasir/smashdaddy",
+      "description": "Restaurant website featuring premium branding, interactive menu, animations, responsive design, and modern user experience.",
+      "longDescription": "Smash Daddy is a restaurant brand experience with premium branding, an interactive menu, rich animations, responsive design, and a modern user experience that delights customers.",
+      "tech": ["React", "Tailwind", "Vite"],
+      "features": ["Premium Branding", "Interactive Menu", "Animations", "Responsive Design"],
+      "stats": { "menuItems": 60, "pageSpeed": 94, "visitors": "3k+" },
+      "featured": true,
+      "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "amkas-distribution",
+      "title": "AMKAS Distribution System",
+      "category": "ERP",
+      "url": "https://amkas-distribution-system.vercel.app/",
+      "github": "https://github.com/bilalyasir/amkas-distribution",
+      "description": "Complete ERP Distribution System with inventory, sales, purchases, invoices, supplier and customer management, financial tracking, reporting, and role-based access.",
+      "longDescription": "AMKAS Distribution System is a complete ERP for distribution businesses. It covers inventory, sales, purchases, invoices, supplier and customer management, financial tracking, reporting, and role-based access control.",
+      "tech": ["React", "TypeScript", "Supabase", "Tailwind"],
+      "features": ["Inventory", "Sales", "Purchases", "Invoices", "Supplier Management", "Customer Management", "Financial Tracking", "Reporting", "Role-Based Access"],
+      "stats": { "modules": 9, "pageSpeed": 90, "users": "50+" },
+      "featured": true,
+      "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "subhan-care-hms",
+      "title": "Subhan Care HMS",
+      "category": "Healthcare",
+      "url": "https://subhancarehms.vercel.app/",
+      "github": "https://github.com/bilalyasir/subhan-care-hms",
+      "description": "Hospital Management System with patient records, appointments, doctors, billing, healthcare workflow, and modern dashboard.",
+      "longDescription": "Subhan Care HMS is a Hospital Management System handling patient records, appointments, doctors, billing, and healthcare workflows, all unified in a modern dashboard.",
+      "tech": ["React", "TypeScript", "Supabase", "Tailwind"],
+      "features": ["Patient Records", "Appointments", "Doctors", "Billing", "Healthcare Workflow", "Modern Dashboard"],
+      "stats": { "modules": 6, "pageSpeed": 91, "users": "30+" },
+      "featured": true,
+      "image": "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "flavorcraft",
+      "title": "FlavorCraft",
+      "category": "Restaurant",
+      "url": "https://flavorcraft-iqcx.vercel.app/",
+      "github": "https://github.com/bilalyasir/flavorcraft",
+      "description": "Restaurant Management Platform with restaurant operations, ordering, kitchen workflow, dashboard, and management tools.",
+      "longDescription": "FlavorCraft is a Restaurant Management Platform streamlining operations, ordering, kitchen workflow, and management through a unified modern dashboard.",
+      "tech": ["React", "TypeScript", "Supabase", "Tailwind"],
+      "features": ["Restaurant Operations", "Ordering", "Kitchen Workflow", "Dashboard", "Management"],
+      "stats": { "modules": 5, "pageSpeed": 93, "users": "20+" },
+      "featured": true,
+      "image": "https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    }
+  ],
+  "categories": ["E-commerce", "ERP", "Healthcare", "Restaurant", "Business Software"]
+}

@@ -1,0 +1,37 @@
+{
+  "timeline": [
+    {
+      "id": "edu-1",
+      "type": "education",
+      "title": "Software Engineering",
+      "org": "The University of Chenab",
+      "location": "Gujrat, Pakistan",
+      "period": "Current Student",
+      "description": "Pursuing Software Engineering, building a strong foundation in computer science, algorithms, and modern software development practices."
+    }
+  ],
+  "experience": {
+    "title": "Full Stack Developer",
+    "description": "Developed multiple production-ready web applications including eCommerce platforms, ERP systems, Hospital Management Systems, Restaurant Systems, and AI-assisted software solutions. Specialized in transforming business requirements into scalable digital products using modern web technologies. Worked extensively with rapid AI-assisted development workflows while maintaining software engineering best practices."
+  },
+  "achievements": [
+    { "title": "Production Applications", "description": "Shipped multiple production-ready web applications used by real businesses." },
+    { "title": "Modern UI/UX Focus", "description": "Crafted award-worthy interfaces with exceptional design taste." },
+    { "title": "ERP Development", "description": "Built a complete ERP distribution system with 9+ modules." },
+    { "title": "Healthcare Systems", "description": "Delivered a Hospital Management System for real workflows." },
+    { "title": "Restaurant Systems", "description": "Created restaurant platforms with premium branding." },
+    { "title": "E-commerce Solutions", "description": "Launched skincare and textile eCommerce platforms." },
+    { "title": "AI Assisted Development", "description": "Accelerated delivery with structured AI workflows." },
+    { "title": "Scalable Architectures", "description": "Designed modular, scalable full-stack architectures." }
+  ],
+  "aiWorkflow": [
+    { "step": "Idea", "description": "Identify the problem and define the product vision." },
+    { "step": "Research", "description": "Explore technologies, constraints, and references." },
+    { "step": "Planning", "description": "Structure scope, milestones, and architecture." },
+    { "step": "AI Assisted Architecture", "description": "Collaborate with AI to model data and systems." },
+    { "step": "Development", "description": "Build features with AI-assisted rapid prototyping." },
+    { "step": "Testing", "description": "Validate behavior, edge cases, and performance." },
+    { "step": "Deployment", "description": "Ship to production with CI/CD and monitoring." },
+    { "step": "Optimization", "description": "Iterate on performance, UX, and reliability." }
+  ]
+}

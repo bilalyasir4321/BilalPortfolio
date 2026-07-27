@@ -1,0 +1,29 @@
+{
+  "skills": [
+    { "name": "Python (Flask)", "category": "Backend", "level": 90, "description": "Building REST APIs and server-side applications with Flask." },
+    { "name": "HTML5", "category": "Frontend", "level": 95, "description": "Semantic, accessible markup foundations." },
+    { "name": "CSS3", "category": "Frontend", "level": 90, "description": "Modern layouts, animations, and responsive design." },
+    { "name": "JavaScript", "category": "Frontend", "level": 92, "description": "ES6+ for interactive client experiences." },
+    { "name": "TypeScript", "category": "Frontend", "level": 88, "description": "Type-safe applications at scale." },
+    { "name": "React", "category": "Frontend", "level": 93, "description": "Component-driven UI architecture." },
+    { "name": "Next.js", "category": "Frontend", "level": 80, "description": "React framework for production apps." },
+    { "name": "Vite", "category": "Tooling", "level": 88, "description": "Fast modern build tooling." },
+    { "name": "Tailwind CSS", "category": "Frontend", "level": 92, "description": "Utility-first styling system." },
+    { "name": "Node.js", "category": "Backend", "level": 85, "description": "JavaScript runtime for backend services." },
+    { "name": "REST APIs", "category": "Backend", "level": 90, "description": "Designing clean, versioned APIs." },
+    { "name": "Supabase", "category": "Database", "level": 82, "description": "Postgres-backed backend-as-a-service." },
+    { "name": "Git", "category": "Tooling", "level": 90, "description": "Version control workflows." },
+    { "name": "GitHub", "category": "Tooling", "level": 90, "description": "Collaboration and CI/CD." },
+    { "name": "Responsive Design", "category": "Frontend", "level": 93, "description": "Mobile-first adaptive layouts." },
+    { "name": "UI/UX", "category": "Design", "level": 88, "description": "Designing intuitive user experiences." },
+    { "name": "AI Assisted Development", "category": "AI", "level": 92, "description": "Accelerating delivery with AI tooling." },
+    { "name": "Prompt Engineering", "category": "AI", "level": 90, "description": "Crafting effective AI prompts." },
+    { "name": "Authentication", "category": "Backend", "level": 85, "description": "Secure user auth flows." },
+    { "name": "Deployment", "category": "DevOps", "level": 87, "description": "Shipping to Vercel, Render, and more." },
+    { "name": "Vercel", "category": "DevOps", "level": 88, "description": "Frontend deployment platform." },
+    { "name": "Performance Optimization", "category": "Frontend", "level": 86, "description": "Lighthouse-grade tuning." },
+    { "name": "State Management", "category": "Frontend", "level": 87, "description": "Predictable client state." },
+    { "name": "Form Validation", "category": "Frontend", "level": 88, "description": "Robust client + server validation." },
+    { "name": "Database Design", "category": "Database", "level": 85, "description": "Modeling relational schemas." }
+  ]
+}

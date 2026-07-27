@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "name": "Bilal Yasir",
+    "title": "Full Stack Developer",
+    "roles": [
+      "Python Developer",
+      "React Developer",
+      "Next.js Developer",
+      "Flask Developer",
+      "TypeScript Developer",
+      "AI Assisted Developer",
+      "Full Stack Developer"
+    ],
+    "tagline": "Building Modern Web Experiences",
+    "subtitles": [
+      "Full Stack Developer",
+      "AI Assisted Software Engineer",
+      "Building Modern Web Experiences"
+    ],
+    "bio": "Bilal Yasir is a Full Stack Developer and Software Engineering student at The University of Chenab, Gujrat, Pakistan. He specializes in building modern SaaS platforms, ERP systems, restaurant systems, healthcare systems, AI-powered applications, and scalable business software. He combines traditional software engineering with AI-assisted development to rapidly design, prototype, and deploy production-ready applications. His focus is building software that solves real business problems while maintaining excellent UI/UX.",
+    "location": "Gujrat, Pakistan",
+    "university": "The University of Chenab",
+    "email": "hello@bilalyasir.dev",
+    "github": "https://github.com/bilalyasir",
+    "linkedin": "https://www.linkedin.com/in/bilalyasir"
+  },
+  "stats": [
+    { "label": "Projects Built", "value": 12, "suffix": "+" },
+    { "label": "Technologies", "value": 20, "suffix": "+" },
+    { "label": "Years Learning", "value": 3, "suffix": "+" },
+    { "label": "Deployments", "value": 15, "suffix": "+" },
+    { "label": "Business Solutions", "value": 6, "suffix": "+" },
+    { "label": "Open Source Contributions", "value": 5, "suffix": "+" }
+  ]
+}
