@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Search, ExternalLink, Github, Eye, Filter } from 'lucide-react';
+import { Search, ExternalLink, Filter, ArrowUpRight } from 'lucide-react';
 import Reveal from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 import TiltCard from '@/components/ui/TiltCard';
@@ -19,27 +19,36 @@ function ProjectCard({
 }) {
   return (
     <TiltCard className="h-full" max={10}>
-      <div className="gradient-border group relative h-full overflow-hidden rounded-2xl glass">
-        <div className="relative h-48 overflow-hidden">
+      <div
+        className="gradient-border group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl glass transition-all duration-500 hover:glow-ring"
+        onClick={onOpen}
+      >
+        <div className="relative h-52 overflow-hidden">
           <img
             src={project.image}
             alt={project.title}
             loading="lazy"
             className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent" />
-          <span className="absolute left-3 top-3 rounded-full bg-electric-500/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-electric-500/0 via-transparent to-accent-500/0 opacity-0 transition duration-500 group-hover:from-electric-500/20 group-hover:to-accent-500/20 group-hover:opacity-100" />
+          <span className="absolute left-3 top-3 rounded-full bg-electric-500/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white shadow-glow">
             {project.category}
           </span>
           {project.featured && (
-            <span className="absolute right-3 top-3 rounded-full bg-accent-500/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
+            <span className="absolute right-3 top-3 rounded-full bg-accent-500/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white shadow-glow-accent">
               Featured
             </span>
           )}
+          <div className="absolute bottom-3 right-3 flex h-9 w-9 translate-y-2 items-center justify-center rounded-full bg-white/10 opacity-0 backdrop-blur-md transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+            <ArrowUpRight className="h-4 w-4 text-white" />
+          </div>
         </div>
 
-        <div className="p-5">
-          <h3 className="font-display text-lg font-semibold text-white">{project.title}</h3>
+        <div className="flex flex-1 flex-col p-5">
+          <h3 className="font-display text-lg font-semibold text-white transition group-hover:glow-text">
+            {project.title}
+          </h3>
           <p className="mt-2 line-clamp-2 text-sm text-white/55">{project.description}</p>
 
           <div className="mt-4 flex flex-wrap gap-1.5">
@@ -58,29 +67,10 @@ function ProjectCard({
             )}
           </div>
 
-          <div className="mt-5 flex items-center gap-2">
-            <button
-              onClick={onOpen}
-              className="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1.5 text-xs text-white/80 transition hover:bg-white/10 hover:text-white"
-            >
-              <Eye className="h-3.5 w-3.5" /> Details
-            </button>
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1.5 text-xs text-white/80 transition hover:bg-white/10 hover:text-white"
-            >
-              <ExternalLink className="h-3.5 w-3.5" /> Visit
-            </a>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="ml-auto inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs text-white/50 transition hover:text-white"
-            >
-              <Github className="h-3.5 w-3.5" />
-            </a>
+          <div className="mt-auto pt-5">
+            <div className="inline-flex items-center gap-1.5 text-xs font-medium text-electric-400 transition group-hover:text-electric-300">
+              View project <ExternalLink className="h-3.5 w-3.5" />
+            </div>
           </div>
         </div>
       </div>
@@ -118,6 +108,11 @@ export default function Projects({
     trackProjectView(p.id).catch(() => {});
   };
 
+  const visitProject = (p: Project) => {
+    window.open(p.url, '_blank');
+    notify(`Opening ${p.title}`, 'info');
+  };
+
   return (
     <section id="projects" className="section-pad relative">
       <div className="absolute inset-0 bg-radial-fade opacity-30 pointer-events-none" />
@@ -125,7 +120,7 @@ export default function Projects({
         <SectionHeading
           eyebrow="Projects"
           title="Interactive project showcase"
-          subtitle="A curated selection of production-ready applications spanning eCommerce, ERP, healthcare, and restaurant systems."
+          subtitle="A curated selection of production-ready applications spanning eCommerce, ERP, healthcare, and restaurant systems. Click any card to explore."
         />
 
         <Reveal className="mt-10" delay={0.1}>
@@ -140,7 +135,7 @@ export default function Projects({
                   onClick={() => setCategory(cat)}
                   className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition ${
                     category === cat
-                      ? 'bg-gradient-to-r from-electric-500 to-accent-500 text-white'
+                      ? 'bg-gradient-to-r from-electric-500 to-accent-500 text-white shadow-glow'
                       : 'glass text-white/60 hover:text-white'
                   }`}
                 >
@@ -167,9 +162,9 @@ export default function Projects({
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
+                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.9, y: -20 }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
               >
                 <ProjectCard project={project} onOpen={() => openProject(project)} />
@@ -225,19 +220,10 @@ export default function Projects({
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <MagneticButton
-                  onClick={() => {
-                    window.open(selected.url, '_blank');
-                    notify(`Opening ${selected.title}`, 'info');
-                  }}
+                  onClick={() => visitProject(selected)}
                   variant="primary"
                 >
                   Visit Project <ExternalLink className="h-4 w-4" />
-                </MagneticButton>
-                <MagneticButton
-                  onClick={() => window.open(selected.github, '_blank')}
-                  variant="outline"
-                >
-                  <Github className="h-4 w-4" /> GitHub
                 </MagneticButton>
               </div>
             </div>

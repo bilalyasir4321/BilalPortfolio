@@ -15,14 +15,14 @@
     "description": "Developed multiple production-ready web applications including eCommerce platforms, ERP systems, Hospital Management Systems, Restaurant Systems, and AI-assisted software solutions. Specialized in transforming business requirements into scalable digital products using modern web technologies. Worked extensively with rapid AI-assisted development workflows while maintaining software engineering best practices."
   },
   "achievements": [
-    { "title": "Production Applications", "description": "Shipped multiple production-ready web applications used by real businesses." },
-    { "title": "Modern UI/UX Focus", "description": "Crafted award-worthy interfaces with exceptional design taste." },
-    { "title": "ERP Development", "description": "Built a complete ERP distribution system with 9+ modules." },
-    { "title": "Healthcare Systems", "description": "Delivered a Hospital Management System for real workflows." },
-    { "title": "Restaurant Systems", "description": "Created restaurant platforms with premium branding." },
-    { "title": "E-commerce Solutions", "description": "Launched skincare and textile eCommerce platforms." },
-    { "title": "AI Assisted Development", "description": "Accelerated delivery with structured AI workflows." },
-    { "title": "Scalable Architectures", "description": "Designed modular, scalable full-stack architectures." }
+    { "title": "Siebel Store — Skincare eCommerce", "description": "Built an elegant skincare shopping platform with Flask, responsive product catalog, and optimized UI." },
+    { "title": "AMKS — Textile Commerce", "description": "Delivered a premium textile eCommerce platform with React, TypeScript, and Tailwind." },
+    { "title": "Smash Daddy — Restaurant Brand", "description": "Created a restaurant website with premium branding, interactive menu, and rich animations." },
+    { "title": "AMKAS — ERP Distribution System", "description": "Engineered a complete ERP with 9+ modules: inventory, sales, invoices, role-based access, and reporting." },
+    { "title": "Subhan Care — Hospital Management", "description": "Developed a Hospital Management System handling patient records, appointments, billing, and doctors." },
+    { "title": "FlavorCraft — Restaurant Operations", "description": "Built a restaurant management platform with ordering, kitchen workflow, and dashboard." },
+    { "title": "AI Assisted Development", "description": "Accelerated delivery across all projects using structured AI-assisted workflows and prompt engineering." },
+    { "title": "Scalable Full-Stack Architecture", "description": "Designed modular architectures using React, TypeScript, Supabase, and Node.js across production apps." }
   ],
   "aiWorkflow": [
     { "step": "Idea", "description": "Identify the problem and define the product vision." },

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, GraduationCap, Github, Linkedin, Mail, Copy } from 'lucide-react';
+import { MapPin, GraduationCap, Mail, Copy, MessageCircle } from 'lucide-react';
 import Reveal, { RevealText } from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { useCountUp } from '@/hooks/useCountUp';
@@ -87,22 +87,14 @@ export default function About({
                   <Copy className="h-3.5 w-3.5 text-white/40" />
                 </button>
                 <a
-                  href={profile?.github ?? '#'}
+                  href={profile?.whatsapp ?? 'https://wa.me/923467555698'}
                   target="_blank"
                   rel="noreferrer"
-                  className="glass flex h-10 w-10 items-center justify-center rounded-full text-white/70 hover:text-electric-400"
-                  aria-label="GitHub"
+                  className="inline-flex items-center gap-2 rounded-full glass px-4 py-2 text-sm text-white/80 hover:text-white"
+                  aria-label="WhatsApp"
                 >
-                  <Github className="h-4 w-4" />
-                </a>
-                <a
-                  href={profile?.linkedin ?? '#'}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="glass flex h-10 w-10 items-center justify-center rounded-full text-white/70 hover:text-electric-400"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-4 w-4" />
+                  <MessageCircle className="h-4 w-4 text-success" />
+                  WhatsApp
                 </a>
               </div>
             </div>

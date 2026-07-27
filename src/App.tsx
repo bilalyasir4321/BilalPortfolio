@@ -3,6 +3,7 @@ import { ToastProvider } from '@/components/ui/Toast';
 import LoadingScreen from '@/components/layout/LoadingScreen';
 import CustomCursor from '@/components/layout/CustomCursor';
 import ScrollProgress from '@/components/layout/ScrollProgress';
+import ScrollBackground from '@/components/layout/ScrollBackground';
 import BackToTop from '@/components/layout/BackToTop';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -70,6 +71,7 @@ function Portfolio() {
     <>
       <LoadingScreen />
       <CustomCursor />
+      <ScrollBackground />
       <ScrollProgress />
       <Navbar />
       <CommandPalette />

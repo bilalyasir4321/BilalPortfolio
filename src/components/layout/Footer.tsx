@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Mail, Heart, MessageCircle } from 'lucide-react';
 import { NAV_ITEMS, SOCIAL_LINKS } from '@/constants';
 import { scrollToSection } from '@/utils';
 
@@ -46,8 +46,7 @@ export default function Footer() {
             </h4>
             <div className="flex gap-3">
               {[
-                { icon: Github, href: SOCIAL_LINKS.github, label: 'GitHub' },
-                { icon: Linkedin, href: SOCIAL_LINKS.linkedin, label: 'LinkedIn' },
+                { icon: MessageCircle, href: SOCIAL_LINKS.whatsapp, label: 'WhatsApp' },
                 { icon: Mail, href: `mailto:${SOCIAL_LINKS.email}`, label: 'Email' },
               ].map(({ icon: Icon, href, label }) => (
                 <motion.a

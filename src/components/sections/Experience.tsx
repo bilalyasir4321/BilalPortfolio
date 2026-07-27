@@ -73,9 +73,10 @@ export default function Experience({ data }: { data: ExperienceData | null }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.06 }}
-                className="glass group relative overflow-hidden p-5"
+                className="glass group relative overflow-hidden p-5 transition hover:glow-ring"
               >
-                <div className="absolute -right-4 -top-4 h-16 w-16 rounded-full bg-electric-500/10 blur-2xl transition group-hover:bg-electric-500/20" />
+                <div className="absolute -right-4 -top-4 h-16 w-16 rounded-full bg-electric-500/10 blur-2xl transition group-hover:bg-electric-500/30" />
+                <div className="absolute -bottom-4 -left-4 h-12 w-12 rounded-full bg-accent-500/10 blur-2xl transition group-hover:bg-accent-500/25" />
                 <h4 className="relative font-display text-sm font-semibold text-white">{a.title}</h4>
                 <p className="relative mt-2 text-xs text-white/50">{a.description}</p>
               </motion.div>

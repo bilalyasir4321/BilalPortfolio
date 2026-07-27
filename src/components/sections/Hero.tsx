@@ -43,9 +43,9 @@ export default function Hero({ profile }: { profile: Profile | null }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-white/70"
+          className="mb-6 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-white/70 ring-1 ring-electric-400/20"
         >
-          <span className="h-2 w-2 rounded-full bg-success animate-pulse-glow" />
+          <span className="h-2 w-2 rounded-full bg-success animate-pulse-glow shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
           Available for new projects
         </motion.span>
 
@@ -55,7 +55,7 @@ export default function Hero({ profile }: { profile: Profile | null }) {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          <span className="gradient-text">{profile?.name ?? 'Bilal Yasir'}</span>
+          <span className="gradient-text glow-text">{profile?.name ?? 'Bilal Yasir'}</span>
         </motion.h1>
 
         <motion.div

@@ -85,6 +85,18 @@ body {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+  .glow-text {
+    text-shadow: 0 0 24px rgba(58, 160, 255, 0.4);
+  }
+  .glow-text-accent {
+    text-shadow: 0 0 24px rgba(124, 58, 237, 0.4);
+  }
+  .glow-ring {
+    box-shadow: 0 0 0 1px rgba(58, 160, 255, 0.2), 0 0 30px -5px rgba(58, 160, 255, 0.3);
+  }
+  .glow-ring-accent {
+    box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.2), 0 0 30px -5px rgba(124, 58, 237, 0.3);
+  }
 }
 
 /* Hide native cursor on desktop when custom cursor active */

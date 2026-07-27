@@ -8,8 +8,8 @@ export interface Profile {
   location: string;
   university: string;
   email: string;
-  github: string;
-  linkedin: string;
+  whatsapp: string;
+  whatsappNumber: string;
 }
 
 export interface Stat {

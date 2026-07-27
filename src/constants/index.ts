@@ -9,8 +9,8 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const SOCIAL_LINKS = {
-  github: 'https://github.com/bilalyasir',
-  linkedin: 'https://www.linkedin.com/in/bilalyasir',
+  whatsapp: 'https://wa.me/923467555698',
+  whatsappNumber: '+92 346 7555698',
   email: 'hello@bilalyasir.dev',
 };
 

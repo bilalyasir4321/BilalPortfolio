@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, MapPin, GraduationCap, Mail, Github, Linkedin, Loader2, Copy } from 'lucide-react';
+import { Send, MapPin, GraduationCap, Mail, Loader2, Copy, MessageCircle } from 'lucide-react';
 import Reveal from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { MagneticButton } from '@/components/ui/Magnetic';
@@ -110,6 +110,18 @@ export default function Contact({ profile }: { profile: Profile | null }) {
                 <ContactRow icon={GraduationCap} label="University" value={profile?.university ?? 'The University of Chenab'} />
                 <ContactRow icon={MapPin} label="Location" value={profile?.location ?? 'Gujrat, Pakistan'} />
                 <div>
+                  <div className="mb-1.5 text-xs uppercase tracking-wider text-white/40">WhatsApp</div>
+                  <a
+                    href={profile?.whatsapp ?? 'https://wa.me/923467555698'}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex w-full items-center gap-2 rounded-xl bg-white/5 px-4 py-3 text-left text-sm text-white/85 transition hover:bg-white/10"
+                  >
+                    <MessageCircle className="h-4 w-4 text-success" />
+                    <span className="flex-1 truncate">{profile?.whatsappNumber ?? '+92 346 7555698'}</span>
+                  </a>
+                </div>
+                <div>
                   <div className="mb-1.5 text-xs uppercase tracking-wider text-white/40">Email</div>
                   <button
                     onClick={copyEmail}
@@ -123,11 +135,10 @@ export default function Contact({ profile }: { profile: Profile | null }) {
               </div>
 
               <div className="mt-6">
-                <div className="mb-3 text-xs uppercase tracking-wider text-white/40">Social</div>
+                <div className="mb-3 text-xs uppercase tracking-wider text-white/40">Connect</div>
                 <div className="flex gap-3">
                   {[
-                    { icon: Github, href: profile?.github ?? '#', label: 'GitHub' },
-                    { icon: Linkedin, href: profile?.linkedin ?? '#', label: 'LinkedIn' },
+                    { icon: MessageCircle, href: profile?.whatsapp ?? 'https://wa.me/923467555698', label: 'WhatsApp' },
                     { icon: Mail, href: `mailto:${profile?.email ?? ''}`, label: 'Email' },
                   ].map(({ icon: Icon, href, label }) => (
                     <motion.a
